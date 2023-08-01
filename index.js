@@ -1,4 +1,3 @@
-
 function arraySort(array) {
     let result = []
     for (let i = 0; i < array.length; i++) {
@@ -15,7 +14,7 @@ function arraySort(array) {
 
 function getMaxSubarray(array, number) {
     let result = [];
-    for (let i = 0; i < array.length - number + 1; i++) {
+    for (let i = 0; i <= array.length - number; i++) {
         let sum = 0;
         for (let j = i; j < i+number; j++) {
             sum += array[j];
@@ -30,4 +29,4 @@ const input20 = [[100, 200, 300, 400], 2];
 const input21 = [[1, 4, 2, 10, 23, 3, 1, 0, 20], 4];
 const input22 = [[-3, 4, 0, -2, 6, -1], 2];
 // console.log(arraySort(input1));
-console.log(getMaxSubarray(input22[0], input22[1]));
+console.log(getMaxSubarray(input21[0], input21[1]));
